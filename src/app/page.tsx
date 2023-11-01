@@ -19,6 +19,7 @@ export default async function Home() {
   return (
     <div className="flex flex-col  w-screen h-screen border border-red-100">
       <div className="text-2xl font-bold text-red-800 m-3 ">x-init 模板URLS</div>
+      <div className="p-3">{`${apiBase}/api/data`}</div>
       {Object.keys(data).map((key: string) => (
         <div key={key} className="flex border gap-4 p-3 border-red-800 text-xl font-bold text-red-400">
           <div className="w-96">{key}</div>
